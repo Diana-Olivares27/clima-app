@@ -11,21 +11,25 @@
     <img src="img/banner-clima.jpg" alt="Banner App del Clima" class="banner">
     <h1>⛅ App del Clima</h1>
     <p>Consulta el clima en tiempo real de cualquier ciudad</p>
+    <button id="btnTema" class="btn-tema">🌙 Modo Oscuro</button>
   </header>
 
   <main>
     <form id="formulario" class="buscador">
-      <input type="text" id="inputCiudad" placeholder="Escribe una ciudad... Ej. Toluca" required>
+      <input type="text" id="inputCiudad" placeholder="Escribe una ciudad..." required>
       <button type="submit">🔍 Consultar</button>
+      <button type="button" id="btnUbicacion">📍 Mi ubicación</button>
     </form>
 
+    <div id="historial" class="historial-container"></div>
     <div id="resultado" class="resultado"></div>
-    <p id="estado"></p>
+    <p id="estado">Escribe una ciudad y presiona "Consultar".</p>
+    <div id="pronostico" class="pronostico-container"></div>
   </main>
 
   <footer>
     <p>&copy; 2026 - App del Clima | Datos de OpenWeatherMap</p>
-    <p>Banner diseñado en Canva</p>
+    <p>Diana Itzel Olivares Rodriguez</p>
   </footer>
 
   <script src="script.js"></script>
